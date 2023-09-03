@@ -10,7 +10,7 @@ const number_random = document.querySelector(".random_number")
 
 let numberOfGuess = 10
 let guessCount = []
-let p = document.createElement("p")
+let para = document.createElement("p")
 
 
 submitBtn.addEventListener("click", (e) => {
@@ -24,7 +24,7 @@ submitBtn.addEventListener("click", (e) => {
         previousGuess.innerHTML = `${guessCount}`
         numberOfGuess = numberOfGuess - 1
         Guess_Remaining.innerHTML = `${numberOfGuess}`
-      
+        guessNumber.value=''
         checkGuess()
     }
 
@@ -42,16 +42,16 @@ const endGame = ()=>{
     submitBtn.setAttribute("disabled", "")
     guessNumber.value =''
     let text = document.createTextNode("your game is over please restart your game")
-    p.classList.add("gameOverPara")
-    p.style.cursor="pointer"
-    p.appendChild(text)
-    resultDiv.appendChild(p)
+    para.classList.add("gameOverPara")
+    para.style.cursor="pointer"
+    para.appendChild(text)
+    resultDiv.appendChild(para)
 
 }
 
 
 
-p.addEventListener("click", (e)=>{
+para.addEventListener("click", (e)=>{
     e.preventDefault()
     guessNumber.removeAttribute("disabled")
     numberOfGuess=10
@@ -60,5 +60,7 @@ p.addEventListener("click", (e)=>{
     previousGuess.innerHTML =  `${guessCount}`
     Guess_Remaining.innerHTML = `${numberOfGuess}`
     submitBtn.removeAttribute("disabled")
+
+    resultDiv.removeChild(para)
    
 })
