@@ -45,6 +45,7 @@ nav ul li a:hover{
 }
 .firstSection > div{
    width: 30%;
+   font-size: 2rem;
 }
 .leftSection{
    
@@ -114,8 +115,34 @@ main hr{
 
 footer{
     background-color: #0e0e1a ;
-    height: 230px;
 }
 .footer{
     display: flex;
+    padding:23px 122px ;
+    justify-content: space-evenly;
+}
+footer ul{
+list-style: none;
+}
+.footer >div{
+    width: 223px;
+}
+.footer-rights{
+    text-align: center;
+    color: gray ;
+    pad: 12px 0  ;
+}
+
+.btn{
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px ;
+    font-size: 20px;
+    cursor: pointer;
+}
+.leftSection .buttons{
+    padding: 50px 0;
+
 }
