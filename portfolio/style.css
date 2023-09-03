@@ -41,7 +41,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 80px 0 ;
+    margin: 160px 0 ;
 }
 .firstSection > div{
    width: 30%;
@@ -60,4 +60,62 @@ nav ul li a:hover{
 
 #element{
     color: rgb(159, 69, 243);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.text-gray{
+    color: gray;
+}
+.secondSection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondSection .vertical{
+    margin: 0 100px;
+    height: 93px;
+    width: 1px;
+    background-color: white;
+}
+.img-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}  
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #0e0e1a ;
+    height: 230px;
+}
+.footer{
+    display: flex;
 }
